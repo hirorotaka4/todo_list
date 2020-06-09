@@ -1,0 +1,13 @@
+%p#notice= notice
+%p
+  %strong Content:
+  = @todo.content
+%p
+  %strong Priority:
+  = @todo.priority
+%p
+  %strong Limit:
+  = @todo.limit
+= link_to 'Edit', edit_todo_path(@todo)
+|
+= link_to 'Back', todos_path
